@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api-sandbox.tazapay.com/v1/checkout
+    body:
+      encoding: UTF-8
+      string: '{"fee_paid_by":"buyer","fee_percentage":100,"invoice_currency":"USD","txn_description":"test0101","callback_url":"https://eoszvawdmoeh2g.m.pipedream.net","complete_url":"https://gooawdecom","error_url":"https://gooawdgle.com","payment_methods":["Card"],"txn_docs":[{"type":"Proforma
+        Invoice","url":"https://image.shutterstock.com/image-vector/luxurious-nature-floral-leaf-ornament-600w-1938357313.jpg","name":"Screenshot
+        from 2022-01-17 20-41-22.png"}],"attributes":{"doc_url":"https://media.istockphoto.com/photos/historic-buildings-of-wall-street-in-the-financial-district-of-lower-picture-id1337246025?s=612x612"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '293'
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 23 Feb 2023 21:55:50 GMT
+      X-Amzn-Requestid:
+      - 7d448134-201c-485e-83e0-49f278f93867
+      X-Amz-Apigw-Id:
+      - A0AT1F9dSQ0Fqqg=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63f7e0e5-2f6ad6fd72700d5a062247df;Sampled=0
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 7f71f5258c6bbee046a26011fbbfa996.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - AMS1-C1
+      X-Amz-Cf-Id:
+      - 4dwKwl1tCmBdx7tnaR5QWQGDJMRTmhLpdVHTQxzfa7wyzU3ho091iQ==
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","message":"Bad Request : Your request is invalid","errors":[{"code":2901,"message":"buyer_id/seller_id
+        field is required and must be a valid UUID","remarks":"buyer_id"},{"code":2910,"message":"Field
+        is required and value must be greater than 0","remarks":"invoice_amount"}]}
+
+        '
+    http_version:
+  recorded_at: Thu, 23 Feb 2023 21:55:50 GMT
+recorded_with: VCR 5.1.0
