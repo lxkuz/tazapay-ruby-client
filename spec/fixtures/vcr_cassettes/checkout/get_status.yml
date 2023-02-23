@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v1/checkout/2302-168661
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '698'
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 23 Feb 2023 19:34:08 GMT
+      X-Amzn-Requestid:
+      - e9b303b8-ead8-4c29-b1e9-97aae327f142
+      X-Amz-Apigw-Id:
+      - AzrjqFvKyQ0FhzQ=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63f7bfb0-3a100f9834d23eb0009c5713;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 bf5caee39117de5337c47c748b716e80.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - AMS1-C1
+      X-Amz-Cf-Id:
+      - gq1yQcwihevvLMSC8nb1rncty0PePpUKQxi7AHNg7mgwfL3Ix_zjvg==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"state":"Awaiting_Payment","sub_state":"Generic","invoice_currency":"USD","fee_paid_by":"buyer","txn_type":"goods","txn_no":"2302-168661","txn_description":"test0101","reference_id":"","invoice_amount":1000,"buyer":{"contact_name":"
+        ","email":"a.kuznetsov+3@okft.io","country":"US","company_name":"Test12341","ind_bus_type":"Business","country_alpha2":""},"seller":{"contact_name":"Ansu
+        K","email":"a.kuznetsov+2@okft.io","country":"US","company_name":"","ind_bus_type":"Individual","country_alpha2":""},"attributes":{"doc_url":"https://media.istockphoto.com/photos/historic-buildings-of-wall-street-in-the-financial-district-of-lower-picture-id1337246025?s=612x612"}}}
+
+        '
+    http_version:
+  recorded_at: Thu, 23 Feb 2023 19:34:08 GMT
+recorded_with: VCR 5.1.0

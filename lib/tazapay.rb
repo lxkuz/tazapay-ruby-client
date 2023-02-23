@@ -1,8 +1,24 @@
 # frozen_string_literal: true
 
-require_relative "tazapay/version"
+require "tazapay/config"
+require "tazapay/version"
+require "tazapay/checkout"
 
+# Head module
 module Tazapay
-  class Error < StandardError; end
-  # Your code goes here...
+  class << self
+    attr_accessor :config
+  end
+
+  def self.config
+    @config ||= Config.new
+  end
+
+  def self.reset
+    @config = Config.new
+  end
+
+  def self.configure
+    yield(config)
+  end
 end

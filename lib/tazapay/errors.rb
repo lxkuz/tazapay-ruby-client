@@ -5,6 +5,8 @@
 module Tazapay
   # Stanadrd API error
   class Error < StandardError
+    attr_reader :code
+
     def initialize(message, code)
       @code = code
       super("Error code #{code} #{message}")

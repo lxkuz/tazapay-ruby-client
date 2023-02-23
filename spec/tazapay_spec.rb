@@ -2,6 +2,6 @@
 
 RSpec.describe Tazapay do
   it "has a version number" do
-    expect(Tazapay::VERSION).not_to be nil
+    expect(Tazapay::VERSION).not_to be_nil
   end
 end

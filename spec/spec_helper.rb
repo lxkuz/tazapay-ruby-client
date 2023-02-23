@@ -1,6 +1,17 @@
 # frozen_string_literal: true
 
 require "tazapay"
+require "vcr"
+
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.hook_into :webmock
+  config.configure_rspec_metadata!
+  config.before_record do |i|
+    i.response.body.force_encoding("UTF-8")
+  end
+  config.default_cassette_options = config.default_cassette_options.merge(match_requests_on: %i[method uri body])
+end
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

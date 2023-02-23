@@ -12,10 +12,11 @@ require "tazapay/errors"
 module Tazapay
   # Base API client
   class Client
-    def send_request(method, path, headers, body = {})
+    def send_request(method:, path:, headers: default_headers, body: {})
       conn = faraday_with_block(url: Tazapay.config.base_url)
       conn.headers = headers
-      case method
+      conn.basic_auth(Tazapay.config.access_key, Tazapay.config.secret_key)
+      case method.to_s
       when "get" then response = conn.get(path)
       when "post" then response = conn.post(path, body.to_json)
       end
@@ -36,15 +37,6 @@ module Tazapay
       raise Tazapay::Error.new(response_body, response_code)
     end
 
-    def prepare_get_request(path, subscription_key)
-      headers = {
-        "X-Target-Environment": Tazapay.config.environment || "sandbox",
-        "Content-Type": "application/json",
-        "Ocp-Apim-Subscription-Key": subscription_key
-      }
-      send_request("get", path, headers)
-    end
-
     private
 
     def faraday_with_block(options)
@@ -55,6 +47,12 @@ module Tazapay
       else
         Faraday.new(options)
       end
+    end
+
+    def default_headers
+      {
+        "Content-Type" => "application/json"
+      }
     end
   end
 end
