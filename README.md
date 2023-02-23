@@ -16,7 +16,36 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+### Setup Tazapay client
+
+
+```ruby
+require "tazapay"
+
+Tazapay.configure do |config|
+  config.base_url =  "<SANDBOX_API_URL / PRODUCTION_API_URL>"
+  config.access_key = "<API_Key>"
+  config.secret_key = "<API_Secret>"
+end
+
+```
+
+### Checkout
+
+```ruby
+
+tazapay_checkout = Tazapay::Checkout.new
+
+# Create payment transaction
+tx_number = tazapay_checkout.pay(data)["data"]["txn_no"]
+
+# Check transaction status
+data = tazapay_checkout.get_status(tx_number)
+
+```
+
+See more details in tests
+
 
 ## Development
 
