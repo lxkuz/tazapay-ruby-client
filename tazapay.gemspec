@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-lib = File.expand_path('lib', __dir__)
+lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'tazapay/version'
+require "tazapay/version"
 
 Gem::Specification.new do |spec|
   spec.name = "tazapay"
@@ -32,4 +32,9 @@ Gem::Specification.new do |spec|
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
+
+  spec.add_dependency "faraday", "~> 1.0"
+  spec.add_development_dependency "pry", "~> 0.12"
+  spec.add_development_dependency "vcr", "~> 5.1"
+  spec.add_development_dependency "webmock", "~> 3.18"
 end
