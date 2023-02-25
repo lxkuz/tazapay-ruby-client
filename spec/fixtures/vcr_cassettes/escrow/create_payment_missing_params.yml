@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api-sandbox.tazapay.com/v1/session/payment
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '230'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 19:58:58 GMT
+      X-Amzn-Requestid:
+      - 3e783cbf-b641-4078-b6e6-4fd0d29cbad6
+      X-Amz-Apigw-Id:
+      - A6VEXHtpyQ0Fazw=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa6882-56b2b7d966d48aa57d27a173;Sampled=0
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 20e9cd7a84a4b4e0dce285f587c43f9a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - hjAh6biBK5RzIVFwXYNyWydtA6AuJkxgI20rCjrkuoP7bxXgW2Iyjw==
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","message":"Bad Request : Your request is invalid","errors":[{"code":1502,"message":"A
+        required field is missing in the parameters, check our payment API body parameters
+        for required fields","remarks":"txn_no"}]}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 19:58:58 GMT
+recorded_with: VCR 5.1.0

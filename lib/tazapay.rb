@@ -3,6 +3,7 @@
 require "tazapay/config"
 require "tazapay/version"
 require "tazapay/checkout"
+require "tazapay/escrow"
 require "tazapay/user"
 require "tazapay/bank"
 require "tazapay/metadata"

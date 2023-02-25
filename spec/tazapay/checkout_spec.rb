@@ -16,7 +16,7 @@ RSpec.describe Tazapay::Checkout do
 
   let(:checkout) { described_class.new }
 
-  describe ".get_status" do
+  describe "#get_status" do
     subject(:tx_status) { checkout.get_status(tx_number) }
 
     context "when transaction is valid",

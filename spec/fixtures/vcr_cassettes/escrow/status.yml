@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v1/escrow/2302-782452
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '184'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 19:46:37 GMT
+      X-Amzn-Requestid:
+      - 19e55005-4dcb-469c-8dbc-a3fa90fcba99
+      X-Amz-Apigw-Id:
+      - A6TQmGUWSQ0FiaQ=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa659d-68219db96e13e0932350a16d;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 a875698e08bcdc7b13c04786dfe3a1ac.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - SzfxYeKNfD8x1-wMKLprl9QC-wjh-BWjxrEREEihixq5EnKvJ_5WDg==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"txn_no":"2302-782452","state":"Awaiting_Payment","sub_state":"Generic","invoice_currency":"USD","invoice_amount":1000,"partner_reference_id":"test12345"}}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 19:46:37 GMT
+recorded_with: VCR 5.1.0

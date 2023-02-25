@@ -105,8 +105,23 @@ tazapay_bank.make_primary(bank_id: bank_id, account_id: user_id)
 
 ```
 
-See more details in tests
+### Escrow
+```ruby
+tazapay_escrow = Tazapay::Escrow.new
 
+# See https://docs.tazapay.com/reference/create-escrow-api
+txn_no = tazapay_escrow.create(data)['data']['txn_no']
+
+# See https://docs.tazapay.com/reference/get-escrow-summary-1
+tazapay_escrow.summary(txn_no)
+
+# See https://docs.tazapay.com/reference/escrow-status-api
+tazapay_escrow.status(txn_no)
+
+# See https://docs.tazapay.com/reference/create-payment-api
+payment_url = tazapay_escrow.create_payment(txn_no)['data']['redirect_url']
+
+```
 
 ### Metadata
 

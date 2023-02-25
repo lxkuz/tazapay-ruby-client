@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api-sandbox.tazapay.com/v1/escrow
+    body:
+      encoding: UTF-8
+      string: '{"txn_type":"goods","release_mechanism":"tazapay","reference_id":"test12345","initiated_by":"2526293f-6533-4ae0-b1f4-cc4b8ab95014","buyer_id":"2ec075b2-6efa-4aa0-858c-ae50585d5473","seller_id":"2526293f-6533-4ae0-b1f4-cc4b8ab95014","txn_description":"Positive
+        transaction","txn_docs":[{"type":"Proforma Invoice","url":"https://www.invoicesimple.com/wp-content/uploads/2018/06/Invoice-Template-top.xlsx"},{"type":"Others","name":"Order
+        Form","url":"https://www.invoicesimple.com/wp-content/uploads/2018/06/Invoice-Template-top.xlsx"}],"attributes":{},"invoice_currency":"USD","invoice_amount":1000,"fee_tier":"standard","fee_paid_by":"buyer","fee_percentage":100,"release_docs":[{"type":"Bill
+        of Lading/ Airway Bill"},{"type":"Others","name":"Packing List"}],"flat_fee":{"amount":10,"label":"TEST-LABEL","paid_by":"buyer","payer_percentage":100},"callback_url":"https://eoszvyoakmoeh2g.m.pipedream.net"}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '450'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 19:34:30 GMT
+      X-Amzn-Requestid:
+      - a538a619-8a55-4c40-a54c-6a8a27111247
+      X-Amz-Apigw-Id:
+      - A6RevGhMSQ0FXTQ=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa62c4-789c88275c483d74773175bc;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 e6c9a537bd3796ea580cf02a62b7c246.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - vHWUiju-cW3qxqSu3PUAB0V_YwTqVv5SGRcGnZHdmwispvETZF9Spg==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","message":"escrow created successfully","data":{"txn_no":"2302-782452","state":"Awaiting_Payment","sub_state":"Generic","txn_type":"goods","invoice_currency":"USD","invoice_amount":1000,"fee_tier":"standard","fee_paid_by":"buyer","fee_tier_percentage":0,"fee_amount":0,"collect_amount":1010,"disburse_amount":1000,"flat_fee":{"amount":10,"label":"TEST-LABEL","paid_by":"buyer","payer_percentage":100},"transcation_source":"api"}}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 19:34:30 GMT
+recorded_with: VCR 5.1.0

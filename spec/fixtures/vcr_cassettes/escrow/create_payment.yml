@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api-sandbox.tazapay.com/v1/session/payment
+    body:
+      encoding: UTF-8
+      string: '{"txn_no":"2302-782452","complete_url":"https://www.google.com/","error_url":"https://duckduckgo.com/","callback_url":"https://eo23xhguawd2u8mbkd.m.pipedream.net","payment_methods":["Card"]}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '220'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 19:57:50 GMT
+      X-Amzn-Requestid:
+      - 96136b03-40af-4aa9-b40e-d30233a0eb83
+      X-Amz-Apigw-Id:
+      - A6U5uE-ZyQ0FXxg=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa683d-658b422b2171d1547f23e69a;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 e524b8092e2dda964664df0dfa35341a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - hR57iTL75sPQTnXAzn_qEY_dzaf7VWFuVOAsD5Mu1PosWNDX4wD2xQ==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","message":"payment session created successfully","data":{"redirect_url":"https://pay-sandbox.tazapay.com/marketplace/paymentdetails/76Ns_paTOUNMFswMvXoXoGz0Xn-6lNp_VFX1gwBLJGn-Ch6Fi3vYAEW3wKY2d0pd"}}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 19:57:50 GMT
+recorded_with: VCR 5.1.0

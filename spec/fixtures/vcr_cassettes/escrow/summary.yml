@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v1/escrow/2302-782452/summary
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1204'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 19:42:28 GMT
+      X-Amzn-Requestid:
+      - ef93d30f-9cb3-4db7-8360-e414d67e3dc1
+      X-Amz-Apigw-Id:
+      - A6SpwEGRyQ0FVOQ=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa64a4-555e78c9551021fb653b7626;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 2a4d61538fbb384d64746e2642e5e74e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - Fu0PoUrFhRgTwPTcCwFzHW-IoAnQS5UvT1WmlPVy9LrjqWyN27MIhw==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"state":"Awaiting_Payment","sub_state":"Generic","invoice_currency":"USD","fee_paid_by":"buyer","txn_type":"goods","txn_no":"2302-782452","txn_description":"Positive
+        transaction","release_mechanism":"tazapay","reference_id":"test12345","initiated_by":"2526293f-6533-4ae0-b1f4-cc4b8ab95014","buyer_id":"2ec075b2-6efa-4aa0-858c-ae50585d5473","seller_id":"2526293f-6533-4ae0-b1f4-cc4b8ab95014","invoice_amount":1000,"collect_amount":1010,"disburse_amount":1000,"fee_tier_percentage":0,"release_docs":[{"type":"Others","name":"Packing
+        List","url":""},{"type":"Bill of Lading/ Airway Bill","name":null,"url":""}],"txn_docs":[{"type":"Others","name":"Order
+        Form","url":"1677353668897183587_Invoice-Template-top.xlsx_Order Form"},{"type":"Proforma
+        Invoice","name":null,"url":"1677353668897176642_Invoice-Template-top.xlsx"}],"buyer":{"contact_name":"Ansu
+        K","email":"a.kuznetsov+11@okft.io","country":"US","company_name":"","ind_bus_type":"Individual","country_alpha2":""},"seller":{"contact_name":"
+        ","email":"sometest+12@mail.io","country":"SG","company_name":"TEST SANDBOX","ind_bus_type":"Business","country_alpha2":""},"attributes":{},"initiator_role":"seller","fee_amount":0}}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 19:42:28 GMT
+recorded_with: VCR 5.1.0
