@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tazapay (0.1.1)
+    tazapay (0.1.2)
       faraday (~> 1.0)
 
 GEM

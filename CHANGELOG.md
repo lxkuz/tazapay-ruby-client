@@ -10,3 +10,8 @@
 
 - Add User API
 
+
+## [0.1.2] - 2023-02-25
+
+- Add Bank API
+

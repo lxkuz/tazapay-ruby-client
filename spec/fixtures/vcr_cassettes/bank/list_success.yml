@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v1/bank/2526293f-6533-4ae0-b1f4-cc4b8ab95014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '399'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 14:26:59 GMT
+      X-Amzn-Requestid:
+      - a28282ee-80f4-4510-a5c8-a1ff76751ae3
+      X-Amz-Apigw-Id:
+      - A5kcKGnwSQ0FmYA=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa1ab3-645edf466e181c31246fb32e;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 43235ad12d781e3fd6dab94bb2a51ca0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - pU6jVsISFFURgRkThxhPzV4y8B8xaiKO11JL_5JsIfVHrmaw8ToX5A==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"count":1,"banks":[{"id":"3d8786ba-1083-4cfc-a40c-604f3669a208","bank_name":"Adkinson
+        Securities Ltd","account_number":"985214758563","currency":"USD","country":"Singapore","legal_name":"Adkinson
+        Securities Ltd","contact_code":null,"contact_number":null,"bank_codes":{"SWIFT
+        Code":"ADKSTHB1"},"is_primary_account":true,"address":"","city":"","state":"","zip_code":""}]}}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 14:26:59 GMT
+recorded_with: VCR 5.1.0

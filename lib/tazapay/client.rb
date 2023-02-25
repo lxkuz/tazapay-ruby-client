@@ -13,12 +13,11 @@ module Tazapay
   # Base API client
   class Client
     def send_request(method:, path:, headers: default_headers, body: {})
-      conn = faraday_with_block(url: Tazapay.config.base_url)
-      conn.headers = headers
-      conn.basic_auth(Tazapay.config.access_key, Tazapay.config.secret_key)
+      conn = prepare_connection(headers)
       case method.to_s
       when "get" then response = conn.get(path)
       when "post" then response = conn.post(path, body.to_json)
+      when "put" then response = conn.put(path, body.to_json)
       end
       interpret_response(response)
     end
@@ -38,6 +37,13 @@ module Tazapay
     end
 
     private
+
+    def prepare_connection(headers)
+      conn = faraday_with_block(url: Tazapay.config.base_url)
+      conn.headers = headers
+      conn.basic_auth(Tazapay.config.access_key, Tazapay.config.secret_key)
+      conn
+    end
 
     def faraday_with_block(options)
       Faraday.new(options)

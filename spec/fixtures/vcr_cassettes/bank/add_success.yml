@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api-sandbox.tazapay.com/v1/bank
+    body:
+      encoding: UTF-8
+      string: '{"currency":"USD","bank_name":"Adkinson
+        Securities Ltd","legal_name":"Adkinson Securities Ltd","account_number":"985214758563","is_primary_account":true,"bank_codes":{"SWIFT
+        Code":"ADKSTHB1"},"account_id":"2526293f-6533-4ae0-b1f4-cc4b8ab95014"}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '79'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 14:21:13 GMT
+      X-Amzn-Requestid:
+      - '0931889f-ebd9-4c2e-a396-e0c1af7e135a'
+      X-Amz-Apigw-Id:
+      - A5jmAHcvSQ0FQMg=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa1959-479e73486634929d028ca509;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f9d8d85c1cdd8d752a5fcdb241623dfa.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - LYL8mZOjd1d3GNspfBCVtw6xq6jVqciNbpKUl41thfXHy3kglOHmdw==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"bank_id":"3d8786ba-1083-4cfc-a40c-604f3669a208"}}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 14:21:13 GMT
+recorded_with: VCR 5.1.0

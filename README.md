@@ -76,6 +76,37 @@ tazapay_user.find(email)
 
 See more details in tests
 
+### Bank
+
+```ruby
+
+tazapay_bank = Tazapay::Bank.new
+
+data = {
+  email: "sometest+12@mail.io",
+  country: "SG",
+  ind_bus_type: "Business",
+  business_name: "TEST SANDBOX",
+  contact_code: "+65",
+  contact_number: "9999999999",
+  partners_customer_id: "test-123"
+}
+
+# Add bank account
+bank_id = tazapay_bank.add(
+  account_id: user_id, bank_data: new_data
+)['data']['bank_id']
+
+# List user banks
+tazapay_bank.list(user_id)
+
+# Make bank account primary
+tazapay_bank.make_primary(bank_id: bank_id, account_id: user_id)
+
+```
+
+See more details in tests
+
 
 ## Development
 

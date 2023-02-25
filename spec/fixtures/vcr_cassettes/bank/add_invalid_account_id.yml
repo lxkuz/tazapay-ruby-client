@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api-sandbox.tazapay.com/v1/bank
+    body:
+      encoding: UTF-8
+      string: '{"currency":"USD","bank_name":"Adkinson Securities
+        Ltd","legal_name":"Adkinson Securities Ltd","account_number":"985214758563","is_primary_account":true,"bank_codes":{"SWIFT
+        Code":"ADKSTHB1"},"account_id":"invalid"}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '220'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 14:26:59 GMT
+      X-Amzn-Requestid:
+      - 870c16d6-a552-4e71-8959-9fb74c5a0403
+      X-Amz-Apigw-Id:
+      - A5kcFHGJyQ0Fu2g=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa1ab3-7eba02051f19f4cb2b8d554b;Sampled=0
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 8250617d32eb5ab8f209b802320fccba.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - VSY4aXLOG3KcMVU452M7KA3zgaCbz9l3nrGK6h7OlXehBoGVJVD9Hg==
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","message":"Internal Server Error : We had a problem
+        with our server. Try again later","errors":[{"code":1001,"message":"Database
+        operations failure. One of the queries for this operation has failed"}]}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 14:26:59 GMT
+recorded_with: VCR 5.1.0
