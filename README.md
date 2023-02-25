@@ -44,6 +44,36 @@ data = tazapay_checkout.get_status(tx_number)
 
 ```
 
+### User
+
+```ruby
+
+tazapay_user = Tazapay::User.new
+
+data = {
+  email: "sometest+12@mail.io",
+  country: "SG",
+  ind_bus_type: "Business",
+  business_name: "TEST SANDBOX",
+  contact_code: "+65",
+  contact_number: "9999999999",
+  partners_customer_id: "test-123"
+}
+
+# Create user
+user_id = tazapay_user.create(data)["data"]["account_id"]
+
+# Update user
+tazapay_user.update(user_id, new_data)
+
+# Find user by ID
+tazapay_user.find(user_id)
+
+# Find user by Email
+tazapay_user.find(email)
+
+```
+
 See more details in tests
 
 
