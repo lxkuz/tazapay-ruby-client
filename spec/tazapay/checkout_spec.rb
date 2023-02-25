@@ -14,10 +14,10 @@ RSpec.describe Tazapay::Checkout do
     end
   end
 
-  let(:client) { described_class.new }
+  let(:checkout) { described_class.new }
 
-  describe "#get_status" do
-    subject(:tx_status) { client.get_status(tx_number) }
+  describe ".get_status" do
+    subject(:tx_status) { checkout.get_status(tx_number) }
 
     context "when transaction is valid",
             vcr: "checkout/get_status" do
@@ -79,7 +79,7 @@ RSpec.describe Tazapay::Checkout do
   end
 
   describe "#pay" do
-    subject(:pay) { client.pay(data) }
+    subject(:pay) { checkout.pay(data) }
 
     context "when all params are valid", vcr: "checkout/pay" do
       let(:data) do

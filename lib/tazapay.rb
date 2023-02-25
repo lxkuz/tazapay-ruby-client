@@ -3,6 +3,7 @@
 require "tazapay/config"
 require "tazapay/version"
 require "tazapay/checkout"
+require "tazapay/user"
 
 # Head module
 module Tazapay

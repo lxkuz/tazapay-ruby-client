@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api-sandbox.tazapay.com/v1/user
+    body:
+      encoding: UTF-8
+      string: '{"email":"sometest+11@mail.io","country":"US","ind_bus_type":"Individual","first_name":"Ansu","last_name":"K","contact_code":"+1","contact_number":"8888888888","partners_customer_id":"test-123"}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '160'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 12:00:29 GMT
+      X-Amzn-Requestid:
+      - 571aa3bb-f084-4e66-9599-46869fee2083
+      X-Amz-Apigw-Id:
+      - A5O-kEdiyQ0Fgvg=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63f9f85c-7d0ce28d76db9a3768d56763;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 e524b8092e2dda964664df0dfa35341a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - 78FCt4zKil0Y8RUGDIZ_k1ge4vMU_-GAyXJaPEj-UdkjLoYiDFej-g==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","message":"User created successfully","data":{"account_id":"2ec075b2-6efa-4aa0-858c-ae50585d5473","customer_id":"test-123","country":"US"}}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 12:00:29 GMT
+recorded_with: VCR 5.1.0

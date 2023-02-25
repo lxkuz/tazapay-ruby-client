@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v1/user/sometest+12@mail.io
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '309'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 12:28:36 GMT
+      X-Amzn-Requestid:
+      - c16933d0-cfa2-46bc-88dc-9bf7977711e4
+      X-Amz-Apigw-Id:
+      - A5TGOFbFSQ0FiaQ=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63f9fef4-1a7f31f21d3d999977a5a0f6;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 a75b67932d84d80b40e12159613deb16.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - FRA53-C1
+      X-Amz-Cf-Id:
+      - iCfMHJDVf4NYb6GDzk0iLqnyxEJ_19jynMgy7rc7A_JPVbGVVsQPpg==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"id":"2526293f-6533-4ae0-b1f4-cc4b8ab95014","company_name":"TEST
+        SANDBOX","first_name":"","last_name":"","email":"sometest+12@mail.io","country":"Singapore","country_code":"SG","contact_code":"+65","contact_number":"9999999999","customer_id":"test-123","ind_bus_type":"Business"}}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 12:28:36 GMT
+recorded_with: VCR 5.1.0
