@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# Implementation of the MTN API remittances client
-
 require "tazapay/config"
 require "tazapay/client"
 

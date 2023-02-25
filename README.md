@@ -107,6 +107,38 @@ tazapay_bank.make_primary(bank_id: bank_id, account_id: user_id)
 See more details in tests
 
 
+### Metadata
+
+```ruby
+
+tazapay_metadata = Tazapay::Metadata.new
+
+# See https://docs.tazapay.com/reference/country-configuration-api
+tazapay_metadata.country_config(country)
+
+# See https://docs.tazapay.com/reference/invoice-currency-api
+tazapay_metadata.invoice_currency(buyer_country:, seller_country:)
+
+# See https://docs.tazapay.com/reference/collection-methods-api
+tazapay_metadata.collection_methods(buyer_country:, seller_country:, invoice_currency:, amount:)
+
+# See https://docs.tazapay.com/reference/disburse-methods-api
+tazapay_metadata.disbursement_methods(buyer_country:, seller_country:, invoice_currency:, amount:)
+
+# Doc upload URL
+tazapay_metadata.doc_upload_url
+
+# KYB Doc
+tazapay_metadata.kyb_doc(country)
+
+# See https://docs.tazapay.com/reference/get-milestone-schemes
+tazapay_metadata.milestone_scheme
+
+```
+
+See more details in tests
+
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

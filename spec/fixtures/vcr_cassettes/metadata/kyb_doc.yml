@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v1/metadata/kyb/doc?country=TH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '369'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 15:59:12 GMT
+      X-Amzn-Requestid:
+      - 55d92036-0045-437a-9880-d550a0ae7de5
+      X-Amz-Apigw-Id:
+      - A5x8mHomSQ0FSpw=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa3050-04d722e425a70b2c17b14033;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 9267231a1fec2f141a931c8dc694fe1c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - 1DNZWkxcRhzBCTL36oe3Z_0bpgwCi2X263rBHXi5RKgVoKez_JqHmw==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"kyb_proof_document":[{"name":"Driver''s
+        License","type":"identity"},{"name":"National ID","type":"identity"},{"name":"Passport","type":"identity"},{"name":"Other","type":"identity"},{"name":"Driver''s
+        License","type":"address"},{"name":"National ID","type":"address"},{"name":"Passport","type":"address"},{"name":"Other","type":"address"}]}}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 15:59:12 GMT
+recorded_with: VCR 5.1.0

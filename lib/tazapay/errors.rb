@@ -3,7 +3,7 @@
 # Error handling for unsuccessful responses from the Tazapay API
 
 module Tazapay
-  # Stanadrd API error
+  # Standard API error
   class Error < StandardError
     attr_reader :code, :response_body
 

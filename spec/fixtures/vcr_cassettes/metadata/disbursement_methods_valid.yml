@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v1/metadata/disburse?amount=100&buyer_country=TH&invoice_currency=USD&seller_country=US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '200'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 16:13:07 GMT
+      X-Amzn-Requestid:
+      - 1eda970c-c80b-4ea6-b5f1-71857617b36a
+      X-Amz-Apigw-Id:
+      - A5z_JGQKSQ0Fvsw=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa3393-146853b96d31bc1000b0bb79;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 6e28f02adabde7d09aba9f5efcd44d1a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - pbCzxd3h6mZg7kR-KYhmVBSX1QhIAsz9w_I6TGvTSaxxyGbwI93tFg==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"buyer_country":"TH","seller_country":"US","invoice_currency":"USD","amount":100,"settlement_currencies":[{"currency":"USD","fx_rate":1,"amount":100,"is_minimum":false}]}}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 16:13:07 GMT
+recorded_with: VCR 5.1.0

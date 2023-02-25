@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v1/metadata/countryconfig?country=SG
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1857'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 15:37:54 GMT
+      X-Amzn-Requestid:
+      - 0e168027-2043-4bec-aa77-f91990adfb3c
+      X-Amz-Apigw-Id:
+      - A5u09F42SQ0FnyQ=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa2b52-6eecb2952abbdb9137945170;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 79b38e01cf5e16de2ad2a0ec2187e7f4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - B-jRaGpn3WLPODheQ2u2ui471iMPgj7xN1AdIDWViLBLWjUqSGlnZg==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"market_type":"both","buyer_countries":["AE","AG","AI","AL","AM","AO","AR","AT","AU","AW","AZ","BA","BB","BD","BE","BF","BG","BH","BI","BJ","BM","BN","BO","BR","BS","BW","BZ","CA","CH","CI","CL","CM","CN","CO","CR","CV","CW","CY","CZ","DE","DJ","DK","DM","DO","DZ","EE","EG","ES","ET","FI","FJ","FK","FO","FR","GA","GB","GD","GE","GH","GI","GL","GM","GQ","GR","GT","GW","GY","HK","HN","HR","HT","HU","ID","IE","IL","IN","IS","IT","JM","JO","JP","KE","KG","KH","KM","KN","KR","KW","KY","KZ","LA","LB","LC","LI","LK","LR","LS","LT","LU","LV","MA","MC","MD","MG","ML","MM","MN","MO","MR","MS","MT","MU","MV","MW","MX","MY","MZ","NA","NC","NE","NG","NI","NL","NO","NP","NZ","OM","PA","PE","PF","PG","PH","PK","PL","PR","PT","PY","QA","RO","RS","SA","SB","SC","SE","SG","SH","SI","SK","SL","SN","SR","ST","SX","SZ","TD","TG","TH","TJ","TM","TO","TR","TT","TW","TZ","UA","UG","US","UY","UZ","VC","VG","VN","VU","WF","WS","ZA","ZM"],"seller_countries":["AE","AG","AI","AL","AM","AO","AR","AT","AU","AW","AZ","BA","BB","BD","BE","BF","BG","BH","BI","BJ","BM","BN","BO","BR","BS","BW","BZ","CA","CH","CI","CL","CM","CN","CO","CR","CV","CW","CY","CZ","DE","DJ","DK","DM","DO","DZ","EE","EG","ES","ET","FI","FJ","FK","FO","FR","GA","GB","GD","GE","GH","GI","GL","GM","GQ","GR","GT","GW","GY","HK","HN","HR","HT","HU","ID","IE","IL","IN","IS","IT","JM","JO","JP","KE","KG","KH","KM","KN","KR","KW","KY","KZ","LA","LB","LC","LI","LK","LR","LS","LT","LU","LV","MA","MC","MD","MG","ML","MM","MN","MO","MR","MS","MT","MU","MV","MW","MX","MY","MZ","NA","NC","NE","NG","NI","NL","NO","NP","NZ","OM","PE","PF","PG","PH","PK","PL","PR","PT","PY","QA","RO","RS","SA","SB","SC","SE","SG","SH","SI","SK","SL","SN","SR","ST","SX","SZ","TD","TG","TH","TJ","TM","TO","TR","TT","TW","TZ","UA","UG","US","UY","UZ","VC","VG","VN","VU","WF","WS","ZA","ZM"]}}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 15:37:54 GMT
+recorded_with: VCR 5.1.0

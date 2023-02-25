@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v1/metadata/milestone/scheme
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '45'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 15:54:13 GMT
+      X-Amzn-Requestid:
+      - b8337fd3-2a79-4ce2-9613-3f557e63034e
+      X-Amz-Apigw-Id:
+      - A5xN5FvHSQ0FuZA=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa2f25-2c147b9870eded6d7cbb02ca;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 0a32af04492da569257fec584d243082.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - K0Y8jpevKHg1R2mKJmAi0WuSXKvSlcbYJfqs8nwmM_TMdiWZ55E4NQ==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"schemes":null}}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 15:54:13 GMT
+recorded_with: VCR 5.1.0

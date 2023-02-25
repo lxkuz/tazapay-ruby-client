@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-# Base implementation of the MTN API client
-
-# Includes methods common to collections, disbursements and remittances
-
 require "faraday"
 
 require "tazapay/config"

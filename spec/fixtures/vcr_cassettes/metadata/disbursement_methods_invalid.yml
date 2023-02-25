@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v1/metadata/disburse?amount=100&buyer_country=INVALID&invoice_currency=USD&seller_country=US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '195'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 16:13:08 GMT
+      X-Amzn-Requestid:
+      - d9e3faba-235f-4a12-8bab-506f33f7024f
+      X-Amz-Apigw-Id:
+      - A5z_QGxsSQ0Fe-w=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa3394-42f30dda25a9bf43718e138d;Sampled=0
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 d49f413028fbcce32318aa161c4707a0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - X5gZWN0sqpRSFFRNBC4s1nRu3zeHqfYqmXbeSOrUFrljfwRYXqE9Hg==
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","message":"Bad Request : Your request is invalid","errors":[{"code":1600,"message":"We
+        currently don''t support one of the countries at the moment.","remarks":"buyer_country"}]}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 16:13:08 GMT
+recorded_with: VCR 5.1.0

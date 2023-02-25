@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v1/metadata/collect?amount=100&buyer_country=TH&invoice_currency=USD&seller_country=US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1685'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 16:18:09 GMT
+      X-Amzn-Requestid:
+      - aad3a24c-5dbf-4bd0-9324-801571ac650a
+      X-Amz-Apigw-Id:
+      - A50ttGh-SQ0FROQ=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa34bd-45f751f522ae2c28212f5535;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 033ed92c09627372dcaf2c27f57f2f76.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - zgJ07pgc4QzJCrvpYWtKSfRcKXmDdNpQ9WAN45sS08GZ6yiMbMNHEA==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"buyer_country":"TH","seller_country":"US","invoice_currency":"USD","amount":100,"payment_methods":[{"name":"PromptPay
+        QR","currency":"THB","bank_account":"","banks":null,"tag":"Best FX Rate","url":["https://tazapay-payment-logos.s3.ap-southeast-1.amazonaws.com/v2/PromptPay.svg"],"surcharge_amount":0,"fx_rate":35.369976,"amount":3537,"rank":1,"variable_fee":0,"fixed_fee":0,"txn_fee":0},{"name":"Card","currency":"THB","bank_account":"","banks":null,"tag":"Instant","url":["https://tazapay-payment-logos.s3.ap-southeast-1.amazonaws.com/v2/Mastercard.svg","https://tazapay-payment-logos.s3.ap-southeast-1.amazonaws.com/v2/Visa.svg"],"surcharge_amount":0,"fx_rate":35.981309,"amount":3598.13,"rank":1,"variable_fee":0,"fixed_fee":0,"txn_fee":0},{"name":"Card","currency":"USD","bank_account":"","banks":null,"tag":"Instant","url":["https://tazapay-payment-logos.s3.ap-southeast-1.amazonaws.com/v2/Mastercard.svg","https://tazapay-payment-logos.s3.ap-southeast-1.amazonaws.com/v2/Visa.svg"],"surcharge_amount":0,"fx_rate":1,"amount":100,"rank":2,"variable_fee":0,"fixed_fee":0,"txn_fee":0},{"name":"Wire
+        Transfer","currency":"USD","bank_account":"","banks":null,"tag":"","url":["https://tazapay-payment-logos.s3.ap-southeast-1.amazonaws.com/v2/Swift.svg"],"surcharge_amount":0,"fx_rate":1,"amount":100,"rank":1,"variable_fee":0,"fixed_fee":0,"txn_fee":0}],"collection_currencies":[{"currency":"THB","fx_rate":34.93331,"amount":3493.33,"is_minimum":false},{"currency":"THB","fx_rate":34.93331,"amount":3493.33,"is_minimum":false},{"currency":"USD","fx_rate":1,"amount":100,"is_minimum":false},{"currency":"USD","fx_rate":1,"amount":100,"is_minimum":false}]}}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 16:18:09 GMT
+recorded_with: VCR 5.1.0

@@ -5,6 +5,7 @@ require "tazapay/version"
 require "tazapay/checkout"
 require "tazapay/user"
 require "tazapay/bank"
+require "tazapay/metadata"
 
 # Head module
 module Tazapay
