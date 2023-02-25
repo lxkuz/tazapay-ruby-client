@@ -148,7 +148,7 @@ RSpec.describe Tazapay::User do
           contact_code: "+65",
           contact_number: "9999999999",
           partners_customer_id: "test-123"
-      }
+        }
       end
 
       let(:update_user_response) do
