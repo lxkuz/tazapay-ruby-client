@@ -114,21 +114,35 @@ See more details in tests
 tazapay_metadata = Tazapay::Metadata.new
 
 # See https://docs.tazapay.com/reference/country-configuration-api
+country = "TH"
 tazapay_metadata.country_config(country)
 
 # See https://docs.tazapay.com/reference/invoice-currency-api
-tazapay_metadata.invoice_currency(buyer_country:, seller_country:)
+tazapay_metadata.invoice_currency(
+  buyer_country: "US", seller_country: "TH"
+)
 
 # See https://docs.tazapay.com/reference/collection-methods-api
-tazapay_metadata.collection_methods(buyer_country:, seller_country:, invoice_currency:, amount:)
+tazapay_metadata.collection_methods(
+  buyer_country: "US",
+  seller_country: "TH"
+  invoice_currency: "USD",
+  amount: 100
+)
 
 # See https://docs.tazapay.com/reference/disburse-methods-api
-tazapay_metadata.disbursement_methods(buyer_country:, seller_country:, invoice_currency:, amount:)
+tazapay_metadata.disbursement_methods(
+  buyer_country: "US",
+  seller_country: "TH"
+  invoice_currency: "USD",
+  amount: 100
+)
 
 # Doc upload URL
 tazapay_metadata.doc_upload_url
 
 # KYB Doc
+country = "TH"
 tazapay_metadata.kyb_doc(country)
 
 # See https://docs.tazapay.com/reference/get-milestone-schemes
