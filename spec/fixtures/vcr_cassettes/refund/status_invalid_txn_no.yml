@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v1/payment/refund/status?txn_no=invalid
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '33'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 21:11:09 GMT
+      X-Amzn-Requestid:
+      - 36ea8526-8a1f-4e1d-b114-ac198e3cdd29
+      X-Amz-Apigw-Id:
+      - A6fpGFN5SQ0FoRQ=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa796d-31fa66a750e1696940ed443d;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 3722e3fae8beaa8b858515be7ea93916.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - VvoP8AMnXDRZGu6ORe6Mqgplko8RthlWT3I3FfPG7UwTZoWkh6zGVw==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":null}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 21:11:09 GMT
+recorded_with: VCR 5.1.0

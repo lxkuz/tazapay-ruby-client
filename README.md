@@ -123,6 +123,27 @@ payment_url = tazapay_escrow.create_payment(txn_no)['data']['redirect_url']
 
 ```
 
+### Release
+```ruby
+
+# See https://docs.tazapay.com/reference/release-api
+Tazapay::Release.new.release(txn_no: txn_no)
+
+```
+
+### Refund
+
+```ruby
+
+tazapay_refund = Tazapay::Refund.new
+# See https://docs.tazapay.com/reference/refund-api
+tazapay_refund.request(txn_no: txn_no)
+
+# See https://docs.tazapay.com/reference/refund-status-api
+tazapay_refund.status(txn_no)
+
+```
+
 ### Metadata
 
 ```ruby

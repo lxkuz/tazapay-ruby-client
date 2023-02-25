@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api-sandbox.tazapay.com/v1/payment/refund/request
+    body:
+      encoding: UTF-8
+      string: '{"txn_no":"invalid","amount":null,"remarks":null,"callback_url":null,"documents":null}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '142'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 25 Feb 2023 21:11:08 GMT
+      X-Amzn-Requestid:
+      - 0aa0725b-c209-46b1-bbfd-e89d62177b85
+      X-Amz-Apigw-Id:
+      - A6fo9Ep_yQ0FhIg=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fa796c-450c48573fe3cd5130e7cbc9;Sampled=0
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 6c183700546a331def0de99cb43d1574.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - KxLDuFt51JWOMdxKhm51P-aMLppQFYk1m07-uYg5ekUOEhQdsTX5lw==
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","message":"Bad Request : Your request is invalid","errors":[{"code":2103,"message":"txn_no
+        is not found in our database"}]}
+
+        '
+    http_version:
+  recorded_at: Sat, 25 Feb 2023 21:11:08 GMT
+recorded_with: VCR 5.1.0
