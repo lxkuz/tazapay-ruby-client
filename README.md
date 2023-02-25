@@ -2,6 +2,7 @@
 
 Tazapay API ruby client
 
+https://docs.tazapay.com/reference/introduction
 
 ## Installation
 
