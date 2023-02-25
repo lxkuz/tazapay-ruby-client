@@ -131,4 +131,41 @@ RSpec.describe Tazapay::User do
       end
     end
   end
+
+  describe "#update" do
+    subject(:update_user) { user.update(user_id, update_data) }
+
+    let(:user_id) { "2526293f-6533-4ae0-b1f4-cc4b8ab95014" }
+
+    context "when successful",
+            vcr: "user/update_success" do
+      let(:update_data) do
+        {
+          email: "sometest+12@mail.io",
+          country: "SG",
+          ind_bus_type: "Business",
+          business_name: "TEST SANDBOX2",
+          contact_code: "+65",
+          contact_number: "9999999999",
+          partners_customer_id: "test-123"
+      }
+      end
+
+      let(:update_user_response) do
+        {
+          "data" => {
+            "account_id" => "2526293f-6533-4ae0-b1f4-cc4b8ab95014",
+            "country" => "SG",
+            "customer_id" => "test-123"
+          },
+          "message" => "User already exists",
+          "status" => "success"
+        }
+      end
+
+      it "returns user data" do
+        expect(update_user).to eq(update_user_response)
+      end
+    end
+  end
 end
