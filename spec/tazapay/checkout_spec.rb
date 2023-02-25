@@ -33,7 +33,7 @@ RSpec.describe Tazapay::Checkout do
                          "contact_name" => " ",
                          "country" => "US",
                          "country_alpha2" => "",
-                         "email" => "a.kuznetsov+3@okft.io",
+                         "email" => "a.kuznetsov+3@mail.io",
                          "ind_bus_type" => "Business" },
             "fee_paid_by" => "buyer",
             "invoice_amount" => 1000,
@@ -43,7 +43,7 @@ RSpec.describe Tazapay::Checkout do
                           "contact_name" => "Ansu K",
                           "country" => "US",
                           "country_alpha2" => "",
-                          "email" => "a.kuznetsov+2@okft.io",
+                          "email" => "a.kuznetsov+2@mail.io",
                           "ind_bus_type" => "Individual" },
             "state" => "Awaiting_Payment",
             "sub_state" => "Generic",
@@ -85,7 +85,7 @@ RSpec.describe Tazapay::Checkout do
       let(:data) do
         {
           buyer: {
-            email: "a.kuznetsov+3@okft.io",
+            email: "a.kuznetsov+3@mail.io",
             contact_code: "+1",
             contact_number: "1111111111",
             country: "US",
@@ -93,7 +93,7 @@ RSpec.describe Tazapay::Checkout do
             business_name: "Test12341"
           },
           seller: {
-            email: "a.kuznetsov+2@okft.io",
+            email: "a.kuznetsov+2@mail.io",
             contact_code: "+65",
             contact_number: "1111111111",
             country: "SG",
@@ -127,7 +127,7 @@ RSpec.describe Tazapay::Checkout do
                         "doc_url" => "https://media.istockphoto.com/photos/historic-buildings-of-wall-street-in-the-financial-district-of-lower-picture-id1337246025?s=612x612"
                       },
                       "buyer" => { "country" => "US",
-                                   "email" => "a.kuznetsov+3@okft.io",
+                                   "email" => "a.kuznetsov+3@mail.io",
                                    "id" => "d9fe1daf-9f5a-4471-9424-b23c941aacc6" },
                       "collect_amount" => 1000,
                       "disburse_amount" => 1000,
@@ -140,7 +140,7 @@ RSpec.describe Tazapay::Checkout do
                       "partner_reference_id" => "",
                       "redirect_url" => "https://pay-sandbox.tazapay.com/marketplace/paymentdetails/_nqVw4c5x6TOoJqvubBacQuQ5wBgoEvnp_iAeE89IMSSn849bIjWGOvRs0ttLtAF",
                       "seller" => { "country" => "US",
-                                    "email" => "a.kuznetsov+2@okft.io",
+                                    "email" => "a.kuznetsov+2@mail.io",
                                     "id" => "4337aff8-bab9-437f-8a54-83adcc8b5b5b" },
                       "state" => "Awaiting_Payment",
                       "sub_state" => "Generic",

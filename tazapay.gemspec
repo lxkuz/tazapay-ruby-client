@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.name = "tazapay"
   spec.version = Tazapay::VERSION
   spec.authors = ["Alexey Kuznetsov"]
-  spec.email = ["a.kuznetsov@okft.io"]
+  spec.email = ["m2lxkuz@gmail.com"]
 
   spec.summary = "Tazapay payments API ruby client"
   spec.description = "Tazapay payments API ruby client"
