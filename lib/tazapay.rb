@@ -9,6 +9,7 @@ require "tazapay/refund"
 require "tazapay/user"
 require "tazapay/bank"
 require "tazapay/metadata"
+require "tazapay/kyb"
 
 # Head module
 module Tazapay

@@ -31,4 +31,7 @@
 - Add Release API
 - Add Refund API
 
+## [0.1.6] - 2023-02-27
+
+- Add KYB API
 

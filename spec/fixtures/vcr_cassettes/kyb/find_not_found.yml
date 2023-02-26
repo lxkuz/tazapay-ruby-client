@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v2/kyb/2526293f-6533-4ae0-1234-cc4b8ab95014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '90'
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 26 Feb 2023 19:58:52 GMT
+      X-Amzn-Requestid:
+      - 8341ff96-886a-4232-a944-6ed050561ad1
+      X-Amz-Apigw-Id:
+      - A9n_fETqyQ0FvwQ=
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fbb9fc-35f69a8a101fcac63899c76a;Sampled=0
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 3fcabc15a7f22952dcacfedd3d2b6a14.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - MsFuuS_YMxBTcvhKtz8W4d2sILStd_z1cLgzNrQh7hEZzs2mdKmZqg==
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","message":"resource not found","errors":[{"remarks":"id","code":1005}]}
+
+        '
+    http_version:
+  recorded_at: Sun, 26 Feb 2023 19:58:52 GMT
+recorded_with: VCR 5.1.0

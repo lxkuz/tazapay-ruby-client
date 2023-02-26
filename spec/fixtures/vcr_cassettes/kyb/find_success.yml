@@ -1,0 +1,156 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v2/kyb/2526293f-6533-4ae0-b1f4-cc4b8ab95014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '90'
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 26 Feb 2023 19:58:51 GMT
+      X-Amzn-Requestid:
+      - ecb4c516-1b62-48a3-9d74-a4aa31f48415
+      X-Amz-Apigw-Id:
+      - A9n_EF0ASQ0Fm7A=
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fbb9f9-08bc6614658d0c870659bdad;Sampled=0
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 db89633bf3348e057f316c437d2aee7a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - rUSjwOraNR6edP3n8Vm24KQTWTw6fuyJ2whOh3cYtz1F2wSG3em4Uw==
+    body:
+      encoding: UTF-8
+      string: '{
+        "status": "success",
+        "data": {
+          "account_id": "78e2fde6-a3bb-410c-99b7-56773fea7da8",
+          "application_state": "not_started",
+          "entity_name": "Company",
+          "application_type": "Business",
+          "business": {
+            "id": "f891cc0e-cfba-41c4-9e82-fdc702fd2564",
+            "name": "api integration v2",
+            "type": null,
+            "same_operating_address": false,
+            "incorporation_no": "GST-2344566",
+            "address_line_1": "Block.1, abc",
+            "address_line_2": "XYZ area",
+            "city": "Chennai",
+            "state": "TamilNadu",
+            "country": "India",
+            "zip_code": "600069",
+            "entity_type": "",
+            "entity_name": null,
+            "trading_name": "",
+            "category": null,
+            "sub_category": "",
+            "years_in_business": "",
+            "annual_turnover": "",
+            "website": "",
+            "date_of_incorporation": null,
+            "custom_attrs": {
+              "transaction_id": "123"
+            },
+            "documents": [
+              {
+                "id": "438433c9-4ea9-40f9-a389-bea3bcf8f0f9",
+                "proof_type": "Business",
+                "type": "Other",
+                "tag": "",
+                "url": "https://kyb-service-sandbox.s3.ap-southeast-1.amazonaws.com/20c749d6-9341-4aa5-a363-80d17c15ee40/busRegProof.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA2WN5GPXZGDAL5QI4%2F20220412%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20220412T105709Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkcwRQIgMijR7GhzcAt0i7MqNemWxsTIHF5itgSDjrQV28LeqtsCIQDq3vorgnc1GaoirojCD0JmyIc%2F%2F5WU2q1u6aUncn8ooCqwAghEEAEaDDczNTM3MzA2NTcxNCIMqJOo%2FnvVmqN8PRF%2FKo0CYhr87f8NjP4hauvRDJdAicvTlUrHRXdUE%2FrKSPvSeGcwySt87PpBT7DsR9zZEjOlYyNwrrcZcIgaePfWYTlA4vY7Z1IV0uP%2F942EPp6w%2BPDh4%2FTWlMZcd2Ea2QTtSraa4OyusNY5fCfhMUUFSGjgZlosKDIVPSvkNBVFiRGFsuSTi9t7j8qZVKQ7pR1UcPB8Kpggl5sOXP8GatYMl3eCug10heN1ZWSM7DGquog7lsxaXgKoifb3iJCddA2pXeenrDN%2F%2F7MxbpGoI%2BxQOxzPVPMr%2BEAMR5wDd3HErDZCRe80R9Ks6wz36Q63z7LK2eTcakCXNclYbcfEpLXSt%2BHndZCsqxajO5d7qGR5zWcwhLbVkgY6mgFVofyEbG0egB8tflNPl1CKJRaExxzLR3zSZFiNRKfx1lTL64LK2j%2FxLn3%2BDguk3ncu3Gl5vd9hFgRagDern9t0yEvQul0x4jSHLqAmb39cNKKzvZvZGek4DAt%2FF4rYUqQ4qIuQs64tcWpoYF91LsniEqK9J9z53oh1EL7HgkbbvFbVnqbul19v7ypU1gdE2hFyRB0R%2FQq21HUP&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22%22&X-Amz-Signature=1f13ebd761919eb14eeada032c05568c2f41f7a02db21a44bf6b7fa61552f62f",
+                "file_name": "busRegProof.png",
+                "name": "Business Registration Proof",
+                "description": "Business Registration Proof"
+              },
+              {
+                "id": "8166009f-c1d4-4a49-b37f-991dfaf97ab1",
+                "proof_type": "Address",
+                "type": "Other",
+                "tag": "addressProofDoc",
+                "url": "https://kyb-service-sandbox.s3.ap-southeast-1.amazonaws.com/20c749d6-9341-4aa5-a363-80d17c15ee40/busAddressProof.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA2WN5GPXZGDAL5QI4%2F20220412%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20220412T105709Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkcwRQIgMijR7GhzcAt0i7MqNemWxsTIHF5itgSDjrQV28LeqtsCIQDq3vorgnc1GaoirojCD0JmyIc%2F%2F5WU2q1u6aUncn8ooCqwAghEEAEaDDczNTM3MzA2NTcxNCIMqJOo%2FnvVmqN8PRF%2FKo0CYhr87f8NjP4hauvRDJdAicvTlUrHRXdUE%2FrKSPvSeGcwySt87PpBT7DsR9zZEjOlYyNwrrcZcIgaePfWYTlA4vY7Z1IV0uP%2F942EPp6w%2BPDh4%2FTWlMZcd2Ea2QTtSraa4OyusNY5fCfhMUUFSGjgZlosKDIVPSvkNBVFiRGFsuSTi9t7j8qZVKQ7pR1UcPB8Kpggl5sOXP8GatYMl3eCug10heN1ZWSM7DGquog7lsxaXgKoifb3iJCddA2pXeenrDN%2F%2F7MxbpGoI%2BxQOxzPVPMr%2BEAMR5wDd3HErDZCRe80R9Ks6wz36Q63z7LK2eTcakCXNclYbcfEpLXSt%2BHndZCsqxajO5d7qGR5zWcwhLbVkgY6mgFVofyEbG0egB8tflNPl1CKJRaExxzLR3zSZFiNRKfx1lTL64LK2j%2FxLn3%2BDguk3ncu3Gl5vd9hFgRagDern9t0yEvQul0x4jSHLqAmb39cNKKzvZvZGek4DAt%2FF4rYUqQ4qIuQs64tcWpoYF91LsniEqK9J9z53oh1EL7HgkbbvFbVnqbul19v7ypU1gdE2hFyRB0R%2FQq21HUP&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22%22&X-Amz-Signature=d473c9ae9042bb7bf83b3e823af3f5f3d9b14e770dea26766077f62dd69b2b72",
+                "file_name": "busAddressProof.png",
+                "name": "Business Address Proof",
+                "description": "Business Address Proof"
+              }
+            ],
+            "description": ""
+          },
+          "representative": {
+            "id": "ad44d3b3-b3a2-407f-9f98-d277b7e7142a",
+            "first_name": "Steve",
+            "last_name": "Rogers",
+            "same_operating_address": false,
+            "dob": "",
+            "address_line_1": "add 1",
+            "address_line_2": "add 2",
+            "city": "Chennai",
+            "state": "TamilNadu",
+            "country": "India",
+            "zip_code": "600069",
+            "mobile_number": "9090929229",
+            "nationality": "",
+            "ownership_percent": 50,
+            "ownership_status": false,
+            "type": "Representative",
+            "roles": [],
+            "documents": [
+              {
+                "id": "bcdae991-83be-4f75-a09b-e61df815eba2",
+                "proof_type": "Identity",
+                "type": "Passport",
+                "tag": "identityProofTypeFrontDoc",
+                "url": "https://kyb-service-sandbox.s3.ap-southeast-1.amazonaws.com/20c749d6-9341-4aa5-a363-80d17c15ee40/passportback.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA2WN5GPXZGDAL5QI4%2F20220412%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20220412T105709Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkcwRQIgMijR7GhzcAt0i7MqNemWxsTIHF5itgSDjrQV28LeqtsCIQDq3vorgnc1GaoirojCD0JmyIc%2F%2F5WU2q1u6aUncn8ooCqwAghEEAEaDDczNTM3MzA2NTcxNCIMqJOo%2FnvVmqN8PRF%2FKo0CYhr87f8NjP4hauvRDJdAicvTlUrHRXdUE%2FrKSPvSeGcwySt87PpBT7DsR9zZEjOlYyNwrrcZcIgaePfWYTlA4vY7Z1IV0uP%2F942EPp6w%2BPDh4%2FTWlMZcd2Ea2QTtSraa4OyusNY5fCfhMUUFSGjgZlosKDIVPSvkNBVFiRGFsuSTi9t7j8qZVKQ7pR1UcPB8Kpggl5sOXP8GatYMl3eCug10heN1ZWSM7DGquog7lsxaXgKoifb3iJCddA2pXeenrDN%2F%2F7MxbpGoI%2BxQOxzPVPMr%2BEAMR5wDd3HErDZCRe80R9Ks6wz36Q63z7LK2eTcakCXNclYbcfEpLXSt%2BHndZCsqxajO5d7qGR5zWcwhLbVkgY6mgFVofyEbG0egB8tflNPl1CKJRaExxzLR3zSZFiNRKfx1lTL64LK2j%2FxLn3%2BDguk3ncu3Gl5vd9hFgRagDern9t0yEvQul0x4jSHLqAmb39cNKKzvZvZGek4DAt%2FF4rYUqQ4qIuQs64tcWpoYF91LsniEqK9J9z53oh1EL7HgkbbvFbVnqbul19v7ypU1gdE2hFyRB0R%2FQq21HUP&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22%22&X-Amz-Signature=2fe4ddcb3fecd6a995d21d08a80bd99362724966248ce86b17cebe3da3d3c45d",
+                "file_name": "passportback.jpg",
+                "name": "Address proof",
+                "description": "representative passport"
+              },
+              {
+                "id": "f6c3d79b-ef49-4eca-a634-a5f9e4c70edc",
+                "proof_type": "Identity",
+                "type": "Passport",
+                "tag": "identityProofTypeBackDoc",
+                "url": "https://kyb-service-sandbox.s3.ap-southeast-1.amazonaws.com/20c749d6-9341-4aa5-a363-80d17c15ee40/passportback.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA2WN5GPXZGDAL5QI4%2F20220412%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20220412T105709Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkcwRQIgMijR7GhzcAt0i7MqNemWxsTIHF5itgSDjrQV28LeqtsCIQDq3vorgnc1GaoirojCD0JmyIc%2F%2F5WU2q1u6aUncn8ooCqwAghEEAEaDDczNTM3MzA2NTcxNCIMqJOo%2FnvVmqN8PRF%2FKo0CYhr87f8NjP4hauvRDJdAicvTlUrHRXdUE%2FrKSPvSeGcwySt87PpBT7DsR9zZEjOlYyNwrrcZcIgaePfWYTlA4vY7Z1IV0uP%2F942EPp6w%2BPDh4%2FTWlMZcd2Ea2QTtSraa4OyusNY5fCfhMUUFSGjgZlosKDIVPSvkNBVFiRGFsuSTi9t7j8qZVKQ7pR1UcPB8Kpggl5sOXP8GatYMl3eCug10heN1ZWSM7DGquog7lsxaXgKoifb3iJCddA2pXeenrDN%2F%2F7MxbpGoI%2BxQOxzPVPMr%2BEAMR5wDd3HErDZCRe80R9Ks6wz36Q63z7LK2eTcakCXNclYbcfEpLXSt%2BHndZCsqxajO5d7qGR5zWcwhLbVkgY6mgFVofyEbG0egB8tflNPl1CKJRaExxzLR3zSZFiNRKfx1lTL64LK2j%2FxLn3%2BDguk3ncu3Gl5vd9hFgRagDern9t0yEvQul0x4jSHLqAmb39cNKKzvZvZGek4DAt%2FF4rYUqQ4qIuQs64tcWpoYF91LsniEqK9J9z53oh1EL7HgkbbvFbVnqbul19v7ypU1gdE2hFyRB0R%2FQq21HUP&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22%22&X-Amz-Signature=2fe4ddcb3fecd6a995d21d08a80bd99362724966248ce86b17cebe3da3d3c45d",
+                "file_name": "passportback.jpg",
+                "name": "Address proof",
+                "description": "representative passport"
+              }
+            ],
+            "email": "",
+            "contact_code": "+91",
+            "website": ""
+          }
+        }
+      }
+
+      '
+    http_version:
+  recorded_at: Sun, 26 Feb 2023 19:58:51 GMT
+recorded_with: VCR 5.1.0

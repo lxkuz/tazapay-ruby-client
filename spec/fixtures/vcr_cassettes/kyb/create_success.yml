@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api-sandbox.tazapay.com/v2/kyb/
+    body:
+      encoding: UTF-8
+      string: '{"account_id":"ee4cc3b2-3eb2-4bbd-b423-6eff717c7438","application_type":"Business","entity_name":"Company","submit":true,"business":{"name":"india
+        mart api integration","type":"","incorporation_no":"GST-2344566","address_line_1":"Block.1,
+        abc","address_line_2":"XYZ area","city":"Chennai","state":"TamilNadu","country":"India","zip_code":"600069","trading_name":"","category":[],"sub_category":"","years_in_business":"","annual_turnover":"","website":"","date_of_incorporation":"","custom_attrs":{"transaction_id":"1234"},"documents":[{"description":"Business
+        Registration Proof","file_name":"busRegProof.png","name":"Business Registration
+        Proof","proof_type":"Business","type":"Other","url":"https://i.pinimg.com/736x/53/af/1a/53af1ad615ee4f38e482d77b84eacb44.jpg"},{"description":"Business
+        Address Proof","file_name":"busAddressProof.png","name":"Business Address
+        Proof","proof_type":"Address","tag":"addressProofDoc","type":"Other","url":"https://i.pinimg.com/736x/53/af/1a/53af1ad615ee4f38e482d77b84eacb44.jpg"}]},"representative":{"first_name":"Steve","last_name":"Rogers","roles":["Director"],"dob":"","address_line_1":"add
+        1","address_line_2":"add 2","city":"Chennai","state":"TamilNadu","country":"India","zip_code":"600069","contact_code":"+91","mobile_number":"9090929220","nationality":"","ownership_percent":50,"documents":[{"proof_type":"Identity","type":"Passport","name":"Address
+        proof","url":"https://i.pinimg.com/736x/53/af/1a/53af1ad615ee4f38e482d77b84eacb44.jpg","file_name":"passportback.jpg","description":"representative
+        passport","tag":"identityProofTypeFrontDoc"},{"proof_type":"Identity","type":"Passport","name":"Address
+        proof","url":"https://i.pinimg.com/736x/53/af/1a/53af1ad615ee4f38e482d77b84eacb44.jpg","file_name":"passportback.jpg","description":"representative
+        passport","tag":"identityProofTypeBackDoc"}]},"owner":[{"first_name":"Tony","last_name":"Stark","roles":["Shareholder"],"dob":"","address_line_1":"add
+        1","address_line_2":"add 2","city":"Chennai","state":"TamilNadu","country":"India","zip_code":"600069","contact_code":"+91","mobile_number":"9090929250","nationality":"","ownership_percent":25,"documents":[{"proof_type":"Identity","type":"Passport","name":"Address
+        proof","url":"https://i.pinimg.com/736x/53/af/1a/53af1ad615ee4f38e482d77b84eacb44.jpg","file_name":"passportfront.jpg","description":"representative
+        passport","tag":"identityProofTypeFrontDoc"},{"proof_type":"Identity","type":"Passport","name":"Address
+        proof","url":"https://i.pinimg.com/736x/53/af/1a/53af1ad615ee4f38e482d77b84eacb44.jpg","file_name":"passportback.jpg","description":"representative
+        passport","tag":"identityProofTypeBackDoc"}]},{"first_name":"Thor","last_name":"Odinson","roles":["Shareholder"],"dob":"","address_line_1":"add
+        1","address_line_2":"add 2","city":"Chennai","state":"TamilNadu","country":"India","zip_code":"600069","contact_code":"+91","mobile_number":"9090929229","nationality":"","ownership_percent":25,"documents":[{"proof_type":"Identity","type":"Passport","name":"Address
+        proof","url":"https://i.pinimg.com/736x/53/af/1a/53af1ad615ee4f38e482d77b84eacb44.jpg","file_name":"passportfront.jpg","description":"representative
+        passport"},{"proof_type":"Identity","type":"Passport","name":"Address proof","url":"https://i.pinimg.com/736x/53/af/1a/53af1ad615ee4f38e482d77b84eacb44.jpg","file_name":"passportback.jpg","description":"representative
+        passport","tag":"identityProofTypeBackDoc"}]}]}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '169'
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 26 Feb 2023 19:52:41 GMT
+      X-Amzn-Requestid:
+      - badc838e-97f3-4175-9ca5-5ff5d5e226a5
+      X-Amz-Apigw-Id:
+      - A9nFLHR2SQ0Fazw=
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fbb887-252637aa16d33faf537715f9;Sampled=0
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 0a32af04492da569257fec584d243082.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - U6a1VhoARTOMJKba3719J6G6g6CUG27_Q_oOK-3Ec_gRWDoGYDkgXA==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","message":"kyb application created successfully","data":{"application_id":"a01d242d-8860-4b67-9632-0ff51a1bb3c7"}}
+
+        '
+    http_version:
+  recorded_at: Sun, 26 Feb 2023 19:52:41 GMT
+recorded_with: VCR 5.1.0

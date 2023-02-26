@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://api-sandbox.tazapay.com/v2/kyb/2526293f-6533-4ae0-b1f4-cc4b8ab95014
+    body:
+      encoding: UTF-8
+      string: '{"submit":true}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '185'
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 26 Feb 2023 21:43:11 GMT
+      X-Amzn-Requestid:
+      - c56b58c6-9c0d-426d-9a93-09594a6b76ab
+      X-Amz-Apigw-Id:
+      - A93RgER-yQ0Ft4w=
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fbd26f-650f0f4474602092284f908e;Sampled=0
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 f9d8d85c1cdd8d752a5fcdb241623dfa.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - aecDcaySYt_5sCcAaDJgyTmVjk-AMSjGVkmUUkcv6U_DlWjTWYmXeQ==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","message":"kyb application updated successfully","data":{"application_id":"a01d242d-8860-4b67-9632-0ff51a1bb3c7"}}
+
+      '
+    http_version:
+  recorded_at: Sun, 26 Feb 2023 21:43:11 GMT
+recorded_with: VCR 5.1.0

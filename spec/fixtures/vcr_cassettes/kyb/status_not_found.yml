@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.tazapay.com/v1/kyb/status/2526293f-6533-4ae0-1234-cc4b8ab95014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic VkwwRFM1RFlJU05EVzJVN08yTkg6c2FuZGJveF9wWjJKNjcyWThVTjNlMXFYMWlOanBzYjJqd2hMOEZvaGk2WHpmQWNJdEh0dTVCZjdIbEFaRTRMcHlJZWdmS1lvQkdQdXByb3lHN3BNRlY1TUZIbTBzZGxCaHJSdElRU21OMDRnSFJ1UlAyZDlWbnFVN2NKS2c3cjJMQ0g3OU9WNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '46'
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 26 Feb 2023 19:58:49 GMT
+      X-Amzn-Requestid:
+      - fc735008-d8b3-43be-bd65-46da2642424f
+      X-Amz-Apigw-Id:
+      - A9n-9H-OyQ0FgKA=
+      Cache-Control:
+      - no-store, max-age=0
+      Vary:
+      - Origin
+      X-Amzn-Trace-Id:
+      - Root=1-63fbb9f9-7976cc9a2528ceb60ea820f1;Sampled=0
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 3c1b8c037c66c46a8ac162f1eef5d682.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HEL50-C2
+      X-Amz-Cf-Id:
+      - SE49BRvcjNq5SFNC1QDGdlcA3aAhuFBGscEnWECc7YAeRg1qxgEw5A==
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","message":"user not found"}
+
+        '
+    http_version:
+  recorded_at: Sun, 26 Feb 2023 19:58:49 GMT
+recorded_with: VCR 5.1.0

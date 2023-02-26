@@ -187,6 +187,26 @@ tazapay_metadata.milestone_scheme
 
 ```
 
+### KYB
+
+```ruby
+
+tazapay_kyb = Tazapay::KYB.new
+
+# See https://docs.tazapay.com/reference/kyb-application-api
+application_id = tazapay_kyb.create(data)['data']['application_id']
+
+# See https://docs.tazapay.com/reference/update-kyb-api
+tazapay_kyb.update(id: application_id, data)
+
+# See https://docs.tazapay.com/reference/kyb-status-api
+tazapay_kyb.status(account_id)
+
+# See https://docs.tazapay.com/reference/get-kyb-by-id-api
+tazapay_kyb.find(application_id)
+
+```
+
 See more details in tests
 
 
